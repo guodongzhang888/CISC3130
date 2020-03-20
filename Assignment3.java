@@ -2,8 +2,6 @@
  */
 import java.util.Scanner;
 import java.io.File;
-//import java.util.LinkedList;
-//import java.util.*;
 public class Assignment3{
   public static void main( String[]args ){
     int cols = 3;  // number of columns 
@@ -58,18 +56,7 @@ public class Assignment3{
       }
       
     }//end of class movies
-   /*
-   //Construct movie nodes and reads into the LinkedList
-   LinkedList<Movies>movieList = new LinkedList<Movies>();
-   for(int i = 0; i < rows; i++){
-     Movies move = new Movies(movieInfo[i][1],//ID
-                            movie[i],
-                            year[i],
-                            movieInfo[i][2]//genres
-                              );
-     movieList.add(move);
-   }
-   */
+    
    //Sort movieLists
    class MovieBST{
      private MoviesNode root;
@@ -81,7 +68,7 @@ public class Assignment3{
        
        root = new MoviesNode(movies[1]);
      }
-     /*
+     
      public boolean search(String title){
        MoviesNode current = root;
        while(current != null){
@@ -101,7 +88,7 @@ public class Assignment3{
        
        return false;
      }//end of Search method
-     */
+     
      public boolean insert(String title){
        MoviesNode parent = null;
        MoviesNode current = root;
@@ -149,7 +136,7 @@ public class Assignment3{
    }//end of MovieBST
      
      MovieBST tree = new MovieBST(movie);
-     //System.out.println(tree.search("Toy Story"));
+     System.out.println(tree.search("你好"));
      tree.getAll(new MoviesNode("The Great Raid"));
           
    
